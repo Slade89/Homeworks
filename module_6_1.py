@@ -18,7 +18,6 @@ class Animal:
 class Plant:
     def __init__(self, name):
         self.edible = False
-
         self.name = name
 
 class Mammal(Animal):
@@ -33,9 +32,7 @@ class Flower(Plant):
 class Fruit(Plant):
     def __init__(self, name):
         super().__init__(name)
-
         self.edible = True
-
 
 a1 = Predator('Волк с Уолл-Стрит')
 a2 = Mammal('Хатико')
